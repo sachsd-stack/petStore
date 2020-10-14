@@ -27,10 +27,10 @@
                             <a class="nav-link" href="#">Shop</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="about.html">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="contact.html">Contact</a>
                             </li>  
                         </ul>
                     </div>
@@ -43,7 +43,7 @@
         <div class="row">
 
             <!-- Grid column -->
-            <div class="col-md-12 d-flex justify-content-center mb-5">
+            <div class="col-md-12 d-flex justify-content-center mt-4 mb-4">
         
             <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
             <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Dogs</button>
@@ -60,42 +60,83 @@
         
             <!-- Grid column -->
             <div class="mb-3 pics animation all 2">
-            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="Card image cap">
+            <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(1)" onclick="openModal();currentSlide(1)" class="hover-shadow"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="Placeholder Image">
             </div>
             <!-- Grid column -->
         
             <!-- Grid column -->
             <div class="mb-3 pics animation all 1">
-            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt="Card image cap">
+            <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(2)"
+            src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt="Placeholder Image">
             </div>
             <!-- Grid column -->
         
             <!-- Grid column -->
             <div class="mb-3 pics animation all 1">
-            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg" alt="Card image cap">
+            <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(3)"
+            src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg" alt="Placeholder Image">
             </div>
             <!-- Grid column -->
         
             <!-- Grid column -->
             <div class="mb-3 pics animation all 2">
-            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+            <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(4)" 
+            src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Placeholder Image">
             </div>
             <!-- Grid column -->
         
             <!-- Grid column -->
             <div class="mb-3 pics animation all 2">
-            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Card image cap">
+            <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(5)" 
+            src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Placeholder Image">
             </div>
             <!-- Grid column -->
         
             <!-- Grid column -->
             <div class="mb-3 pics animation all 1">
-            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg" alt="Card image cap">
+            <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(6)" 
+            src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg" alt="Mountain 3">
             </div>
             <!-- Grid column -->
         
         </div>
         <!-- Grid row -->
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+        
+                <div class="mySlides">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg">
+                </div>
+
+                <div class="mySlides">
+                    <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg">
+                </div>
+            
+                <div class="mySlides">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg">
+                </div>
+            
+                <div class="mySlides">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg">
+                </div>
+            
+                <div class="mySlides">
+                    <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg">
+                </div>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            </div>
+        </div>
     </div>
     <footer class="mt-4 bg-info">
         <div class="row">

@@ -44,7 +44,7 @@
     position: relative;
     background-color: #fefefe;
     border:none;
-    margin: auto;
+    margin: auto 20vw;
     padding: 0;
     max-width: 1200px;
     width: fit-content;

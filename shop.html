@@ -48,6 +48,8 @@
             <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
             <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Dogs</button>
             <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Cats</button>
+            <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="3">Birds</button>
+
         
             </div>
             <!-- Grid column -->
@@ -56,50 +58,98 @@
         <!-- Grid row -->
         
         <!-- Grid row -->
-        <div class="gallery" id="gallery">
+        <div class="gallery mb-3" id="gallery">
         
             <!-- Grid column -->
             <div class="mb-3 pics animation all 2">
             <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(1)" onclick="openModal();currentSlide(1)" class="hover-shadow"
-            src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="Placeholder Image">
+            src="./img/cat.jpg" alt="Stu, 5">
             </div>
             <!-- Grid column -->
         
             <!-- Grid column -->
-            <div class="mb-3 pics animation all 1">
-            <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(2)"
-            src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt="Placeholder Image">
+            <div class="mb-3 pics animation all 3">
+                <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(2)"
+            src="./img/parrot.jpg" alt="Polly, 1">
             </div>
             <!-- Grid column -->
-        
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 1">
-            <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(3)"
-            src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg" alt="Placeholder Image">
-            </div>
-            <!-- Grid column -->
-        
+
             <!-- Grid column -->
             <div class="mb-3 pics animation all 2">
-            <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(4)" 
-            src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Placeholder Image">
+                <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(3)" 
+                src="./img/cat2.jpg" alt="Tiny, 1">
             </div>
             <!-- Grid column -->
-        
+
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 1">
+                <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(4)"
+                src="./img/dog3.jpg" alt="Rover, 2">
+            </div>
+            <!-- Grid column -->  
+
             <!-- Grid column -->
             <div class="mb-3 pics animation all 2">
-            <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(5)" 
-            src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Placeholder Image">
+                <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(5)" 
+                src="./img/cat3.jpg" alt="Sam and Ella, 6 months">
+            </div>
+            <!-- Grid column --> 
+
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 2">
+                <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(6)" 
+                src="./img/cat4.jpg" alt="Lucius, 6">
+            </div>
+            <!-- Grid column -->             
+            
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 1">
+            <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(7)"
+            src="./img/dog5.jpg" alt="Buster, Cluster, and Mustard, 4">
             </div>
             <!-- Grid column -->
         
             <!-- Grid column -->
             <div class="mb-3 pics animation all 1">
-            <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(6)" 
-            src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg" alt="Mountain 3">
+            <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(8)" 
+            src="./img/dog4.jpg" alt="Tucker, 2">
             </div>
             <!-- Grid column -->
         
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 1">
+            <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(9)" 
+            src="./img/dog2.jpg" alt="Sadie, 3">
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 3">
+                <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(10)"
+            src="./img/duck.jpg" alt="William, 4">
+            </div>
+            <!-- Grid column -->  
+            
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 3">
+                <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(11)"
+            src="./img/bird.jpg" alt="Unnamed Sparkling Violetear, ?">
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 1">
+                <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(12)" 
+                src="./img/dog.jpg" alt="Mozart, 3">
+                </div>
+                <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 3">
+                <img class="img-fluid hover-shadow" onclick="openModal();currentSlide(13)"
+            src="./img/toucan.jpg" alt="Samuel, 4">
+            </div>
+            <!-- Grid column -->            
         </div>
         <!-- Grid row -->
         <!-- The Modal/Lightbox -->
@@ -108,28 +158,58 @@
             <div class="modal-content">
         
                 <div class="mySlides">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg">
+                    <img class="img-fluid" src="./img/cat.jpg">
                 </div>
 
                 <div class="mySlides">
-                    <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg">
+                    <img class="img-fluid" src="./img/parrot.jpg">
                 </div>
 
                 <div class="mySlides">
-                    <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg">
+                    <img class="img-fluid" src="./img/cat2.jpg">
                 </div>
             
                 <div class="mySlides">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg">
+                    <img class="img-fluid" src="./img/dog3.jpg">
                 </div>
             
                 <div class="mySlides">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg">
+                    <img class="img-fluid" src="./img/cat3.jpg">
                 </div>
             
                 <div class="mySlides">
-                    <img src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg">
+                    <img class="img-fluid" src="./img/cat4.jpg">
                 </div>
+
+                <div class="mySlides">
+                    <img class="img-fluid" src="./img/dog5.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <img class="img-fluid" src="./img/dog4.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <img class="img-fluid" src="./img/dog2.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <img class="img-fluid" src="./img/duck.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <img class="img-fluid" src="./img/bird.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <img class="img-fluid" src="./img/dog.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <img class="img-fluid" src="./img/toucan.jpg">
+                </div>
+
+
 
                 <!-- Caption text -->
                 <div class="caption-container">

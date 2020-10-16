@@ -51,7 +51,3 @@ function openModal() {
     // dots[slideIndex-1].className += " active";
     captionText.innerHTML = altText[slideIndex-1].alt;
   }
-
-  function setModalContentWidth() {
-
-  }

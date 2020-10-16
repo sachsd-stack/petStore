@@ -11,6 +11,11 @@ $(function() {
     });
 });
 
+// $('.navbar-nav li').click(function(){
+//   $('.navbar-nav li').removeClass('active');
+//   $(this).addClass('active');
+// })
+
 // Open the Modal
 function openModal() {
     document.getElementById("myModal").style.display = "block";
@@ -51,3 +56,4 @@ function openModal() {
     // dots[slideIndex-1].className += " active";
     captionText.innerHTML = altText[slideIndex-1].alt;
   }
+  

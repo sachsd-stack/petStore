@@ -17,6 +17,10 @@
     border: 2px solid #000 !important;
 }
 
+.container-carousel {
+  margin:0 20%;
+}
+
 .container-fluid.shop-content {
   background:linear-gradient(to bottom, white, #07ABA0, white);
 }
@@ -26,7 +30,6 @@
 }
 
 #contact {
-  background:none;
   background-color:#07ABA0 !important;
 }
 

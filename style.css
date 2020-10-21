@@ -25,9 +25,54 @@ html  {
     border: 2px solid #000 !important;
 }
 
-.container-carousel {
-  margin:0 20%;
+/* FOR PARALLAX SLIDESHOW */
+.carousel-inner .carousel-item {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    -webkit-background-position: center;
+    -moz-background-position: center;
+    -o-background-position: center;
+    background-position: center;
+
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    background-attachment: fixed;
 }
+
+.slideImg1 {
+  background-image: url('./img/slideshow1.jpg');
+  height:86vh;
+
+}
+
+.slideImg2 {
+  background-image: url('./img/slideshow2.jpg');
+  height:86vh;
+}
+
+.slideImg3 {
+  background-image: url('./img/slideshow3.jpg');
+  height:86vh;
+}
+
+.slideImg4 {
+  background-image: url('./img/slideshow4.jpg');
+  height:86vh;
+}
+
+.slideImg5 {
+  background-image: url('./img/slideshow5.jpg');
+  height:86vh;
+}
+/* END PARALLAX SLIDESHOW*/
+
+/* .container-carousel {
+  margin:0 0%;
+} */
 
 .container-fluid.adopt-content {
   background:linear-gradient(to bottom, white, #07ABA0, white);
@@ -161,6 +206,10 @@ h5,h6 {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1); 
+}
+
+.fa {
+  font-size:5rem;
 }
     
 @media (max-width: 450px) {

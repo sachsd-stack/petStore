@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
     <title>Your Local Pet Store</title>
@@ -40,21 +41,16 @@
     <div class="container-carousel">
         <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class ="img-fluid" src="./img/slideshow1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img class ="img-fluid" src="./img/slideshow2.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img class ="img-fluid" src="./img/slideshow3.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img class ="img-fluid" src="./img/slideshow4.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img class ="img-fluid" src="./img/slideshow5.jpg" class="d-block w-100" alt="...">
-              </div>
+                <div class="carousel-item slideImg1 active">
+                </div>
+                <div class="carousel-item slideImg2">
+                </div>
+                <div class="carousel-item slideImg3">
+                </div>
+                <div class="carousel-item slideImg4">
+                </div>
+                <div class="carousel-item slideImg5">
+                </div>
             </div>
         </div>
     </div>
@@ -81,13 +77,18 @@
     <div class="border-custom"></div>
     <footer class="bg-footer pt-3">
         <div class="row">
-            <div class ="col-md-4">
-
+            <div class ="col-md-4 text-center">
+                <h4 class="mb-3">Great animal charities to donate to!</h4>
+                <a href="https://secure.aspca.org/donate/donate?ms=wb_top_homepage-donate&initialms=wb_top_homepage-donate&pcode=WEBMEMBER&lpcode=WEBGUARD">Aspca</a>
+                <br><a href="https://www.staf.org/index.php/idonate/">Save the Animals Foundation</a>
+                <br><a href="https://peppermintpiganimalrescue.org/donate/">Peppermint Pig Animal Rescue</a>
             </div>
-            <div class ="col-md-4">
-
+            <div class ="col-md-4 text-center">
+                <h4 class="mb-3">Follow us on Facebook and Instagram!</h4>
+                <i class="fa fa-facebook-square ml-5 mr-5"></i>
+                <i class="fa fa-instagram mr-5"></i>
             </div>
-            <div class ="col-md-4">
+            <div class ="col-md-4 text-center">
                 <h4 class="mb-3">Sign Up</h4>
                 <input class="mb-3" type="text" id="emailSignUp" name ="emailAddress" placeholder="email@website.com" required></input>
                 <p>Sign up to receive updates, special offers, program communications and other information!</p>

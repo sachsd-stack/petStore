@@ -46,7 +46,6 @@ html  {
 .slideImg1 {
   background-image: url('./img/slideshow1.jpg');
   height:86vh;
-
 }
 
 .slideImg2 {
@@ -172,6 +171,14 @@ h5,h6 {
     cursor: pointer;
   }
   
+    /* Caption text */
+    .caption-container {
+      text-align: center;
+      background-color: black;
+      padding: 2px 16px;
+      color: white;
+    }
+    
   /* img.demo {
     opacity: 0.6;
   }
@@ -211,7 +218,11 @@ h5,h6 {
 .fa {
   font-size:5rem;
 }
-    
+@media (min-width:1280px) {
+  .slideImg1 .slideImg2 .slideImg3 .slideImg4 .slideImg5 {
+    height:86vh;
+  }
+}
 @media (max-width: 450px) {
     .gallery {
     -webkit-column-count: 1;

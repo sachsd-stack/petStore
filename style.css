@@ -41,6 +41,10 @@ html  {
     -moz-background-attachment: fixed;
     -o-background-attachment: fixed;
     background-attachment: fixed;
+
+    /* FOR PARALLAX RESIZE */
+    /* background-repeat: no-repeat;
+    background-size: 100% auto; */
 }
 
 .slideImg1 {
@@ -218,11 +222,12 @@ h5,h6 {
 .fa {
   font-size:5rem;
 }
-@media (min-width:1280px) {
+
+/* @media (max-width:1280px) {
   .slideImg1 .slideImg2 .slideImg3 .slideImg4 .slideImg5 {
-    height:86vh;
   }
-}
+} */
+
 @media (max-width: 450px) {
     .gallery {
     -webkit-column-count: 1;
@@ -240,3 +245,10 @@ h5,h6 {
     padding-right: 1.1rem;
     }
 }
+
+/* FOR PARALLAX RESIZE */
+/* @media screen and (max-width: 768px) {
+	.carousel-item {
+		background-attachment: inherit;
+	}
+} */

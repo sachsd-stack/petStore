@@ -27,49 +27,47 @@ html  {
 
 /* FOR PARALLAX SLIDESHOW */
 .carousel-inner .carousel-item {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
 
-    -webkit-background-position: center;
-    -moz-background-position: center;
-    -o-background-position: center;
-    background-position: center;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-position: top;
 
     -webkit-background-attachment: fixed;
     -moz-background-attachment: fixed;
     -o-background-attachment: fixed;
     background-attachment: fixed;
 
+    width: 100%;
+    height: 0;
+    padding-bottom: 55%;
     /* FOR PARALLAX RESIZE */
-    /* background-repeat: no-repeat;
-    background-size: 100% auto; */
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .slideImg1 {
   background-image: url('./img/slideshow1.jpg');
-  height:86vh;
 }
 
 .slideImg2 {
   background-image: url('./img/slideshow2.jpg');
-  height:86vh;
 }
 
 .slideImg3 {
   background-image: url('./img/slideshow3.jpg');
-  height:86vh;
 }
 
 .slideImg4 {
   background-image: url('./img/slideshow4.jpg');
-  height:86vh;
 }
 
 .slideImg5 {
   background-image: url('./img/slideshow5.jpg');
-  height:86vh;
 }
 /* END PARALLAX SLIDESHOW*/
 
@@ -91,13 +89,13 @@ html  {
 
 .navbar-brand {
   font-family: 'Architects Daughter', cursive;
-  font-size:2.5rem;
-  text-shadow:0.1rem 0.1rem 0.2rem white;
+  font-size:4.5vw;
+  text-shadow:0.5vw 0.5vw 1.0vw white;
 }
 
 .nav-item {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.25rem;
+  font-size: 2vw;
 }
 
 .border-custom {
@@ -223,10 +221,11 @@ h5,h6 {
   font-size:5rem;
 }
 
-/* @media (max-width:1280px) {
-  .slideImg1 .slideImg2 .slideImg3 .slideImg4 .slideImg5 {
+@media (max-width:390px) {
+  .carousel-inner .carousel-item {
+    padding-bottom:50%;
   }
-} */
+}
 
 @media (max-width: 450px) {
     .gallery {
@@ -251,4 +250,8 @@ h5,h6 {
 	.carousel-item {
 		background-attachment: inherit;
 	}
+} */
+
+/* #navbarSupportedContent{
+  justify-content: flex-end;
 } */

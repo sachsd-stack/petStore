@@ -245,13 +245,8 @@ h5,h6 {
     }
 }
 
-/* FOR PARALLAX RESIZE */
-/* @media screen and (max-width: 768px) {
-	.carousel-item {
-		background-attachment: inherit;
-	}
-} */
-
-/* #navbarSupportedContent{
-  justify-content: flex-end;
-} */
+@media (max-width:916px) {
+  .fa {
+    font-size:3rem;
+  }
+}

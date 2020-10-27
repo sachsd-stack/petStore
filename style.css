@@ -245,7 +245,16 @@ h5,h6 {
     }
 }
 
+
 @media (max-width:916px) {
+  .navbar-brand {
+    font-size:5.5vw;
+    text-shadow:1.0vw 1.0vw 2.0vw white;
+  }
+  
+  .nav-item {
+    font-size: 3vw;
+  }
   .fa {
     font-size:3rem;
   }

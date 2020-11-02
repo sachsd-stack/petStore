@@ -5,8 +5,8 @@ $(function() {
         $("#gallery").fadeTo(100, 0.1);
         $("#gallery div").not("."+selectedClass).fadeOut().removeClass('animation');
         setTimeout(function() {
-        $("."+selectedClass).fadeIn().addClass('animation');
-        $("#gallery").fadeTo(300, 1);
+          $("."+selectedClass).fadeIn().addClass('animation');
+          $("#gallery").fadeTo(300, 1);
         }, 300);
     });
 });
@@ -92,3 +92,106 @@ function openModal() {
 //   newheight = newheight  + 'px';
 //   div.height(newheight);
 // }  
+
+
+var shop = [
+    {
+      title: 'Stu, 5',
+      image: './img/cat.jpg',
+      price: '7,500-15,000',
+      filter: '2'
+    },
+    {
+      title: 'Polly, 1',
+      image: './img/parrot.jpg',
+      price: '7,500-15,000',
+      filter: '3'
+    },
+    {
+      title: 'Tiny, 1',
+      image: './img/cat2.jpg',
+      price: '7,500-15,000',
+      filter: '2'
+    },
+    {
+      title: 'Rover, 2',
+      image: './img/dog3.jpg',
+      price: '7,500-15,000',
+      filter: '1'
+    },
+    {
+      title: 'Sam and Ella, 6 months',
+      image: './img/cat3.jpg',
+      price: '7,500-15,000',
+      filter: '2'
+    },
+    {
+      title: 'Lucius, 6',
+      image: './img/cat4.jpg',
+      price: '7,500-15,000',
+      filter: '2'
+    },
+    {
+      title: 'Buster, Cluster, and Mustard, 4',
+      image: './img/dog5.jpg',
+      price: '7,500-15,000',
+      filter: '1'
+    },
+    {
+      title: 'Tucker, 2',
+      image: './img/dog4.jpg',
+      price: '7,500-15,000',
+      filter: '1'
+    },
+    {
+      title: 'Sadie, 3',
+      image: './img/dog2.jpg',
+      price: '7,500-15,000',
+      filter: '1'
+    },
+    {
+      title: 'William, 4',
+      image: './img/duck.jpg',
+      price: '7,500-15,000',
+      filter: '3'
+    },
+    {
+      title: 'Unnamed Sparkling Violetear, ?',
+      image: './img/bird.jpg',
+      price: '7,500-15,000',
+      filter: '3'
+    },
+    {
+      title: 'Mozart, 3',
+      image: './img/dog.jpg',
+      price: '7,500-15,000',
+      filter: '1'
+    },
+    {
+      title: 'Samuel, 4',
+      image: './img/toucan.jpg',
+      price: '7,500-15,000',
+      filter: '3'
+    }
+]
+  
+  var galleryHTML = "";
+  var slidesHTML = "";
+
+
+  for (var i=0; i < shop.length; i++){
+      var heading = '<div class="mb-3 pics animation all ' + shop[i].filter + '">' + '<span><h5>' + shop[i].title + '</h5>';
+      var image = '<img class ="img-fluid hover-shadow" onclick="openModal();currentSlide(' + (i+1) + ')" src="' + shop[i].image + '" alt = "' + shop[i].title + '">';
+      var price = '<p> $' + shop[i].price + '</p></span>';
+      var addToCart = '<div class="addToCart"><button type="button" class="btn btn-warning">Add to Cart</button></div></div>';
+      var concatThis = heading + image + price + addToCart;
+      galleryHTML = galleryHTML + concatThis;
+
+      var slides = '<div class="mySlides"><img class="img-fluid" src="' + shop[i].image + '"></div>';
+      slidesHTML = slidesHTML + slides;
+  }
+  var modalHTML = " ";
+  modalHTML = '<span class="close cursor" onclick="closeModal()">&times;</span><div class="modal-content">' + slidesHTML + '<div class="caption-container"><p id="caption"></p></div></div>';
+
+  document.getElementById('gallery').innerHTML = galleryHTML;
+  document.getElementById('myModal').innerHTML = modalHTML;

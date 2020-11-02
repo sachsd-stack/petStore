@@ -93,7 +93,7 @@ function openModal() {
 //   div.height(newheight);
 // }  
 
-
+// Adds HTML content to gallery and modal
 var shop = [
     {
       title: 'Stu, 5',

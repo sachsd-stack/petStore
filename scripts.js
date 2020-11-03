@@ -180,11 +180,9 @@ var shop = [
 
 
   for (var i=0; i < shop.length; i++){
-      var heading = '<div class="mb-3 pics animation all ' + shop[i].filter + '">' + '<span><h5>' + shop[i].title + '</h5>';
-      var image = '<img class ="img-fluid hover-shadow" onclick="openModal();currentSlide(' + (i+1) + ')" src="' + shop[i].image + '" alt = "' + shop[i].title + '">';
-      var price = '<p> $' + shop[i].price + '</p></span>';
-      var addToCart = '<div class="addToCart"><button type="button" class="btn btn-warning">Add to Cart</button></div></div>';
-      var concatThis = heading + image + price + addToCart;
+      var heading = '<div class="mb-3 pics animation all ' + shop[i].filter + '">' + '<span>';
+      var image = '<img class ="img-fluid hover-shadow" onclick="openModal();currentSlide(' + (i+1) + ')" src="' + shop[i].image + '" alt = "' + shop[i].title + ' <br>$' + shop[i].price + '"></div>';
+      var concatThis = heading + image;
       galleryHTML = galleryHTML + concatThis;
 
       var slides = '<div class="mySlides"><img class="img-fluid" src="' + shop[i].image + '"></div>';

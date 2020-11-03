@@ -223,7 +223,7 @@ h5,h6 {
 
 @media (max-width:390px) {
   .carousel-inner .carousel-item {
-    padding-bottom:50%;
+    padding-bottom:48%;
   }
 }
 
@@ -245,6 +245,11 @@ h5,h6 {
     }
 }
 
+@media (min-width:391px) and (max-width:790px) {
+  .carousel-inner .carousel-item {
+    padding-bottom:51.5%;
+  }
+}
 
 @media (max-width:916px) {
   .navbar-brand {

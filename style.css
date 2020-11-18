@@ -221,6 +221,10 @@ h5,h6 {
   font-size:5rem;
 }
 
+#w_Border {
+  border: 0.5rem solid #107069;
+}
+
 @media (max-width:390px) {
   .carousel-inner .carousel-item {
     padding-bottom:48%;

@@ -99,79 +99,79 @@ function openModal() {
       {
         title: 'Stu, 5',
         image: './img/cat.jpg',
-        price: '7,500-15,000',
+        price: '1,700',
         filter: '2'
       },
       {
         title: 'Polly, 1',
         image: './img/parrot.jpg',
-        price: '7,500-15,000',
+        price: '1,920',
         filter: '3'
       },
       {
         title: 'Tiny, 1',
         image: './img/cat2.jpg',
-        price: '7,500-15,000',
+        price: '1,360',
         filter: '2'
       },
       {
         title: 'Rover, 2',
         image: './img/dog3.jpg',
-        price: '7,500-15,000',
+        price: '1,600',
         filter: '1'
       },
       {
         title: 'Sam and Ella, 6 months',
         image: './img/cat3.jpg',
         price: '7,500-15,000',
-        filter: '2'
+        filter: '3,840'
       },
       {
         title: 'Lucius, 6',
         image: './img/cat4.jpg',
-        price: '7,500-15,000',
+        price: '1,700',
         filter: '2'
       },
       {
         title: 'Buster, Cluster, and Mustard, 4',
         image: './img/dog5.jpg',
-        price: '7,500-15,000',
+        price: '6,000',
         filter: '1'
       },
       {
         title: 'Tucker, 2',
         image: './img/dog4.jpg',
-        price: '7,500-15,000',
+        price: '2,250',
         filter: '1'
       },
       {
         title: 'Sadie, 3',
         image: './img/dog2.jpg',
-        price: '7,500-15,000',
+        price: '1,200',
         filter: '1'
       },
       {
         title: 'William, 4',
         image: './img/duck.jpg',
-        price: '7,500-15,000',
+        price: '850',
         filter: '3'
       },
       {
         title: 'Unnamed Sparkling Violetear, ?',
         image: './img/bird.jpg',
-        price: '7,500-15,000',
+        price: '750',
         filter: '3'
       },
       {
         title: 'Mozart, 3',
         image: './img/dog.jpg',
-        price: '7,500-15,000',
+        price: '1,250',
         filter: '1'
       },
       {
         title: 'Samuel, 4',
         image: './img/toucan.jpg',
-        price: '7,500-15,000',
+        price: '800',
         filter: '3'
       }
   ]
